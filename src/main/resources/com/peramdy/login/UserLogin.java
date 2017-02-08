@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 /**
- * Created by Peramdy on 2017/2/7.
+ * Created by Peramdy on 2017/2/7
  */
 public class UserLogin extends HttpServlet {
 
@@ -25,7 +25,7 @@ public class UserLogin extends HttpServlet {
         Integer reslut= userService.login(userName,passWords);
         //        resp.sendRedirect("");   //从定向
         if(reslut==1){
-            req.getRequestDispatcher("index.jsp").forward(req,resp);//带参数传递
+            req.getRequestDispatcher("userIndex.jsp").forward(req,resp);//带参数传递
         }else{
 
         }

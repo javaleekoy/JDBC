@@ -16,4 +16,15 @@
   </servlet-mapping>
 
 
+  <servlet>
+    <servlet-name>UserLogin</servlet-name>
+    <servlet-class>com.peramdy.login.UserLogin</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>UserLogin</servlet-name>
+    <url-pattern>/UserLogin</url-pattern>
+  </servlet-mapping>
+
+
 </web-app>
