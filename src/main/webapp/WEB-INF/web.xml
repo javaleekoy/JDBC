@@ -5,9 +5,9 @@
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
 
-  <servlet>
+ <servlet>
     <servlet-name>Login</servlet-name>
-    <servlet-class>com.peramdy.login.LoginAction</servlet-class>
+    <servlet-class>servlet.com.peramdy.login.LoginAction</servlet-class>
   </servlet>
 
   <servlet-mapping>
@@ -15,16 +15,19 @@
     <url-pattern>/login</url-pattern>
   </servlet-mapping>
 
-
   <servlet>
-    <servlet-name>UserLogin</servlet-name>
-    <servlet-class>com.peramdy.login.UserLogin</servlet-class>
+    <servlet-name>log4j</servlet-name>
+    <servlet-class>servlet.com.peramdy.utils.Log4jInit</servlet-class>
+    <init-param>
+      <param-name>localLog4j</param-name>
+      <param-value>\WEB-INF\classes\conf\log4j.properties</param-value>
+    </init-param>
+    <load-on-startup>1</load-on-startup>
   </servlet>
 
-  <servlet-mapping>
-    <servlet-name>UserLogin</servlet-name>
-    <url-pattern>/UserLogin</url-pattern>
-  </servlet-mapping>
 
+  <welcome-file-list>
+    <welcome-file>/userLogin.jsp</welcome-file>
+  </welcome-file-list>
 
 </web-app>

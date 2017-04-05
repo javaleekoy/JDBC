@@ -11,9 +11,9 @@
     <title>登录</title>
 </head>
 <body>
-   <form action="/UserLogin" method="post">
+   <form action="/userLogin" method="post">
       <label>用户名：</label><input name="userName" type="text"><br/>
-      <label>密码：</label><input name="passWord" type="password"><br/>
+      <label>密码：</label><input name="password" type="password"><br/>
        <input type="submit" value="登录"/>
    </form>
 </body>

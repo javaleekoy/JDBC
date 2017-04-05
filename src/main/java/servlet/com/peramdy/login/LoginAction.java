@@ -1,4 +1,4 @@
-package com.peramdy.login;
+package servlet.com.peramdy.login;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;

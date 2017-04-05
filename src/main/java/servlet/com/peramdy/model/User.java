@@ -1,4 +1,4 @@
-package com.peramdy.model;
+package servlet.com.peramdy.model;
 
 /**
  * Created by Peramdy on 2017/2/7.

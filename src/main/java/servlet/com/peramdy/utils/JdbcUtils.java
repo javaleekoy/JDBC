@@ -1,4 +1,4 @@
-package com.peramdy.utils;
+package servlet.com.peramdy.utils;
 
 import java.sql.*;
 
