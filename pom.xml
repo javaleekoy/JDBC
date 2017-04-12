@@ -38,7 +38,7 @@
       <groupId>org.projectlombok</groupId>
       <artifactId>lombok</artifactId>
       <version>${lombok.version}</version>
-    </dependency>
+      </dependency>
 
     <dependency>
       <groupId>commons-lang</groupId>
@@ -62,11 +62,64 @@
 
   </dependencies>
 
+
+
+<!--  <repositories>
+  <repository>
+    <id>nexus</id>
+    <name>central</name>
+    <url>http://192.168.164.222/nexus/content/groups/public/</url>
+  </repository>
+</repositories>-->
+
+<!--  <pluginRepositories>
+    <pluginRepository>
+      <id>nexus</id>
+      <name>nexus</name>
+      <url>http://192.168.164.222/nexus/content/groups/public/</url>
+      <releases><enabled>true</enabled></releases>
+      <snapshots><enabled>true</enabled></snapshots>
+    </pluginRepository>
+  </pluginRepositories>-->
+
+<!--  <distributionManagement>
+    <repository>
+      <id>releases</id>
+      <name>Nexus Release Repository</name>
+      <url>http://192.168.164.222/nexus/content/repositories/releases/</url>
+    </repository>
+    <snapshotRepository>
+      <id>snapshots</id>
+      <name>Nexus Snapshot Repository</name>
+      <url>http://192.168.164.222/nexus/content/repositories/snapshots/</url>
+    </snapshotRepository>
+  </distributionManagement>-->
+
+  <!--<profiles>
+    <profile>
+      <id>test</id>
+      <build>
+       <plugins>
+         <plugin>
+           <groupId>org.apache.maven.plugins</groupId>
+           <artifactId>maven-compiler-plugin</artifactId>
+           <configuration>
+             <source>1.7</source>
+             <target>1.7</target>
+             <encoding>UTF-8</encoding>
+             <debug>true</debug>
+           </configuration>
+         </plugin>
+       </plugins>
+      </build>
+    </profile>
+  </profiles>-->
+
+
   <build>
     <finalName>JDBC</finalName>
     <plugins>
       <plugin>
-
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>
         <configuration>
